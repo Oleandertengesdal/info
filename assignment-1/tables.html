@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tables</title>
+        <style>
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            td, th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }   
+        </style>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="3">Overskriftsrad</th>
+                </tr>
+                <tr>
+                    <th>Kol 1</th>
+                    <th>Kol 2</th>
+                    <th>Kol 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">Rad 1</td>
+                    <td>Rad 1, kol 2</td>
+                    <td>Rad 1, Kol 3</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Rad 2, Kol 2 og Kol 3</td>
+                </tr>
+                <tr>
+                    <td>Rad 3, Kol 1</td>
+                    <td colspan="2">Rad 3, Kol 2 og Kol 3</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Rad 4, Kol 1, 2, og 3</td>
+                </tr>
+                <tr>
+                    <td>Rad 5, Kol 1</td>
+                    <td rowspan="2">Rad 5, Kol 2</td>
+                    <td>Rad 5, Kol 3</td>
+                </tr>
+                <tr>
+                    <td>Rad 6, Kol 1</td>
+                    <td>Rad 6, Kol 3</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+
+</html>
